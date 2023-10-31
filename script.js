@@ -1,5 +1,4 @@
 const canvas = document.querySelector("canvas");
-const canvImg = CanvasRenderingContext2D.createPattern(HTMLImageElement("mario_brik.png"))
 const $ = canvas.getContext("2d");
 const w = canvas.width;
 const h = canvas.height;
@@ -53,7 +52,7 @@ for (let i = 0; i < brickRows; i++) {
 function drawBall() {
   $.beginPath();
   $.arc(ball.x, ball.y, ball.size, 0, 2 * Math.PI);
-  $.fillStyle = "seagreen" ;
+  $.fillStyle = "seagreen";
   $.fill();
   $.closePath();
 }
@@ -61,7 +60,7 @@ function drawBall() {
 function drawPaddle() {
   $.beginPath();
   $.rect(paddle.x, paddle.y, paddle.w, paddle.h);
-  $.fillStyle = canvImg;
+  $.fillStyle = "steelblue";
   $.fill();
   $.closePath();
 }

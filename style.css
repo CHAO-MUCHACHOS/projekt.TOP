@@ -12,4 +12,6 @@ body {
     background: #d5b343;
     border-radius: 5px;
   }
-  
+  .canv{
+    border-radius: 2%;
+  }
