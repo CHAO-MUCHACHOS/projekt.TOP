@@ -18,7 +18,7 @@ const ball = {
   x: w / 2,
   y: h / 2,
   size: 10,
-  speed: 4,
+  speed: 100,
   dx: 4,
   dy: -4
 };
@@ -26,7 +26,7 @@ const ball = {
 const paddle = {
   x: w / 2 - 40,
   y: h - 30,
-  w: 75,
+  w: 100,
   h: 15,
   speed: 8,
   dx: 0
