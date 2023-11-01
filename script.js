@@ -2,7 +2,13 @@ const canvas = document.querySelector("canvas");
 const $ = canvas.getContext("2d");
 const w = canvas.width;
 const h = canvas.height;
-
+let grad = $.createConicGradient(0,0 , 1000, 0)
+grad.addColorStop('.30', 'violet')
+grad.addColorStop('.50', 'yellow')
+grad.addColorStop('1', 'red')
+const img = new Image()
+img.src = 'mario_brik.png'
+console.log(img);
 let score = 0;
 
 const brickRows = 9;
@@ -75,7 +81,7 @@ function drawBricks() {
     col.forEach((brick) => {
       $.beginPath();
       $.rect(brick.x, brick.y, brick.w, brick.h);
-      $.fillStyle = brick.visible ? "indianred" : "transparent";
+      $.fillStyle = brick.visible ? grad : "transparent";
       $.fill();
       $.closePath();
     });
