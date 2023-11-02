@@ -3,8 +3,8 @@ const $ = canvas.getContext("2d");
 const w = canvas.width;
 const h = canvas.height;
 let grad = $.createConicGradient(0,0 , 1000, 0)
-grad.addColorStop('.30', 'violet')
-grad.addColorStop('.50', 'yellow')
+grad.addColorStop('.20', 'yellow')
+grad.addColorStop('.70', 'orange')
 grad.addColorStop('1', 'red')
 const img = new Image()
 img.src = 'mario_brik.png'
