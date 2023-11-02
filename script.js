@@ -35,8 +35,8 @@ const paddle = {
 const brick = {
   w: 70,
   h: 20,
-  padding: 10,
-  offsetX: 45,
+  padding: 2,
+  offsetX: 7,
   offsetY: 60,
   visible: true
 };
